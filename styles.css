@@ -55,7 +55,7 @@ a:hover {
 
 a[href*="tel"]::before {
     content: "";
-    background-image: url(whatsapp_PNG19.png);
+    background-image: url(images/whatsapp_PNG19.png);
     background-size: cover;
     height: 20px;
     width: 20px;
@@ -73,7 +73,7 @@ a[href*="tel"]:hover {
 
 a[href*="mail"]::before {
     content: "";
-    background-image: url(gmail_logo_PNG12.png);
+    background-image: url(images/gmail_logo_PNG12.png);
     background-size: cover;
     height: 20px;
     width: 20px;
@@ -92,7 +92,7 @@ a[href*="mail"]:hover {
 
 a[href*="hub"]::before {
     content: "";
-    background-image: url(github_PNG85.png);
+    background-image: url(images/github_PNG85.png);
     background-size: cover;
     height: 20px;
     width: 20px;
