@@ -1,0 +1,109 @@
+body {
+   
+    text-align: center;
+    margin: auto;
+    width: 800px;
+    background-color: rgba(238, 228, 228, 0.863);
+}
+
+
+.name {
+    text-align: left;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+
+figure {
+    text-align: right;
+}
+
+
+.infa {
+    border-radius: 15px;
+    background-color: khaki;
+}
+
+.objective {
+    border: 0px solid;
+    width: 70mm;
+    background-color: rgba(160, 58, 58, 0.575);
+    
+}
+
+li {
+    text-align: left;
+    margin-left: 300px;
+    font: 1em "Georgia", Serif;
+    font-style: normal;
+}
+
+h2:hover {
+    color: rgb(79, 81, 207);
+}
+
+
+.address {
+    text-align: left;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+
+a[href*="tel"]::before {
+    content: "";
+    background-image: url(whatsapp_PNG19.png);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a[href*="tel"]:hover {
+    position: relative;
+    opacity: 1;
+}
+
+a[href*="mail"]::before {
+    content: "";
+    background-image: url(gmail_logo_PNG12.png);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+a[href*="mail"]:hover {
+    position: relative;
+    opacity: 1;
+}
+
+a[href*="hub"]::before {
+    content: "";
+    background-image: url(github_PNG85.png);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+a[href*="hub"]:hover {
+    position: relative;
+    opacity: 1;
+}
