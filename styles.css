@@ -4,6 +4,7 @@ body {
     width: 100%;
     max-width: 1024px;
     background-color:#bfc0ba;
+    margin: 0 auto;
 }
 
 
@@ -11,6 +12,11 @@ header {
     display: flex;
    flex-direction: column;
    align-items: baseline;
+}
+
+
+footer {
+    text-align: center;
 }
 
 
@@ -199,3 +205,27 @@ a[href*="hub"]:hover {
     position: relative;
     opacity: 1;
 }
+
+
+@media screen and (max-width: 650px) {
+    body {
+        width: 40%;
+        background-color:grey;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    footer {
+        display: flex;
+        justify-content: end;
+    }
+}
+
