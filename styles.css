@@ -3,75 +3,94 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 1024px;
-    background-color:#bfc0ba;
     margin: 0 auto;
-}
+    background-color:#bfc0ba;
+  }
+
+  
+  @media (max-width: 640px) {
+    body {
+      align-items: center;
+    }
+  }
 
 
-header {
-    display: flex;
-   flex-direction: column;
-   align-items: baseline;
-}
-
-
-footer {
+  footer {
     text-align: center;
 }
 
 
-figure{
-    display: block;
-    margin-block-start: -280px;
-    margin-block-end: 0px;
-    margin-inline-start: 500px;
-    margin-inline-end: 0px;
-    align-items: baseline;
+  header {
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
 }
 
- 
-.name_infa {
+
+@media (max-width: 640px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+  .skills_education {
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
     justify-content: space-around;
-}
+    margin-left: 15px;
+  }
 
 
-.skills_education {
-    display: flex;
-    justify-content: start;
-}
-
-
-
-.skills {
-    margin-left: 170px;
+  @media (max-width: 640px) {
+    .skills_education {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
 }
 
 
 .courses_projects {
     display: flex;
-    align-items: baseline;
-}
- 
+    justify-content: space-around;
+    margin-left: -142px;
+    margin-right: -82px;
+  }
 
-.projects {
-    margin-left: 473px;
-    margin-top: 7px;
+
+  @media (max-width: 640px) {
+    .courses_projects {
+      display: flex;
+      flex-direction: column;
+
+      margin-left: 15px;
+      margin-right: 15px;
+    }
 }
 
 
 .languages {
     display: flex;
-    justify-content: start; 
-    margin-block-start: 25px; 
-    align-items: baseline;  
+    justify-content: start;
+    margin-left: 80px;
 }
 
 
-/* opisanie stilej */
+@media (max-width: 640px) {
+    .languages {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-left: 15px;
+    }
+}
 
+/* opisanie stilej */
 
 .name {
     text-align: left;
@@ -92,6 +111,8 @@ figure{
 
 .photo {
     border-radius: 80px;
+    max-width: 400px;
+    max-height: 300px;
 }
 
 
@@ -103,9 +124,9 @@ figure{
 
 
 .infa {
-    border-radius: 20px;
-    background-color: grey;
-    font-size: 25px;
+   font-weight: bold;
+   margin-left: 15px;
+   margin-right: 15px;
  }
 
 
@@ -206,26 +227,4 @@ a[href*="hub"]:hover {
     opacity: 1;
 }
 
-
-@media screen and (max-width: 650px) {
-    body {
-        width: 40%;
-        background-color:grey;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    main {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-}
-
-
-@media screen and (max-width: 700px) {
-    footer {
-        display: flex;
-        justify-content: end;
-    }
-}
 
